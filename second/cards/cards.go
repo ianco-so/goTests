@@ -1,13 +1,13 @@
 package cards
 
-import (
-	"fmt"
-)
+//var deckSize int = 52
 
-func Cards() {
-	//var card string = "Ace of Spades"
-	card := "Ace of Spades"
-	fmt.Println(card)
-	card = "Five of Diamonds"
-	fmt.Println(card)
+var Suits = []string{"Diamonds", "Hearts", "Clubs", "Spades"}
+var Ranks = []string{"Ace", "Two", "Three", "Four",
+	"Five", "Six", "Seven", "Eight",
+	"Nine", "Ten", "Jack", "Queen",
+	"King"}
+
+func Card(rank int, suit int) string {
+	return Ranks[rank] + " of " + Suits[suit]
 }

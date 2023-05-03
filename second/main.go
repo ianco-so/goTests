@@ -1,10 +1,11 @@
 package main
 
 import (
+	"fmt"
 	"second/cards"
 )
 
 func main() {
-	cards.Cards()
-
+	fmt.Println(cards.AceOfSpades())    // Ace of Spades
+	fmt.Println(cards.JackOfDiamonds()) // Jack of Diamonds
 }
